@@ -1,0 +1,194 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-display {
+  min-height: 428px;
+  width: 415px;
+}
+
+.screen {
+  min-height: 85px;
+  height: 100%;
+  width: 415px;
+  background: #525252;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  padding: 10px 15px;
+}
+.screen .input-screen {
+  width: 100%;
+  min-height: 20px;
+  height: 100%;
+  color: #F9B710;
+  font-size: 18px;
+  text-align: right;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.screen .result-screen {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.buttons {
+  height: 345px;
+  width: 415px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 65px);
+  gap: 5px;
+  outline: none;
+  border: none;
+}
+.buttons .clear-btn {
+  grid-column: 1/3;
+  grid-row: 1;
+  background: #F4958F;
+}
+.buttons .divide {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+.buttons .multiply {
+  grid-column: 4/5;
+  grid-row: 1;
+}
+.buttons .subtract {
+  grid-column: 4/5;
+  grid-row: 2;
+}
+.buttons .add {
+  grid-column: 4/5;
+  grid-row: 3;
+}
+.buttons .equal-btn {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  background: #F9EC7A;
+}
+.buttons .nine {
+  grid-column: 3/4;
+  grid-row: 2;
+}
+.buttons .eight {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.buttons .seven {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.buttons .six {
+  grid-column: 3/4;
+  grid-row: 3;
+}
+.buttons .five {
+  grid-column: 2/3;
+  grid-row: 3;
+}
+.buttons .four {
+  grid-column: 1/2;
+  grid-row: 3;
+}
+.buttons .three {
+  grid-column: 3/4;
+  grid-row: 4;
+}
+.buttons .two {
+  grid-column: 2/3;
+  grid-row: 4;
+}
+.buttons .one {
+  grid-column: 1/2;
+  grid-row: 4;
+}
+.buttons .zero {
+  grid-column: 1/3;
+  grid-row: 5;
+}
+.buttons .decimal-btn {
+  grid-column: 3/4;
+  grid-row: 5;
+}
+
+.operation-btn {
+  background: #4FCAA5;
+}
+
+.number-btn,
+.decimal-btn {
+  background: #7AF9D3;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+
+.btn:active {
+  transform: scale(0.95, 0.95);
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
+#author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 7rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+#author p {
+  font: 400 0.9rem ubuntu;
+  color: #60C3B9;
+  margin: 0;
+}
+#author p a:link {
+  text-decoration: none;
+  color: #60C3B9;
+}
+#author p a:visited {
+  text-decoration: none;
+  color: #60C3B9;
+}
+#author p a:hover {
+  text-decoration: none;
+  color: #CE2335;
+}
+#author p a:active {
+  text-decoration: none;
+  color: #31837A;
+}
